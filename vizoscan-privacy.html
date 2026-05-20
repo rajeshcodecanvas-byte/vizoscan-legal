@@ -37,6 +37,8 @@
         .highlight { color: var(--gold); font-weight: bold; }
         footer { text-align: center; margin-top: 40px; padding: 20px 0; border-top: 1px solid var(--surface); color: var(--text-dim); font-size: 0.8rem; }
         a { color: var(--gold); text-decoration: none; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; }
     </style>
 </head>
 <body>
@@ -44,36 +46,41 @@
     <header>
         <h1>VizoScan AI</h1>
         <p class="brand">PREMIUM DOCUMENT SUITE</p>
-        <p class="last-updated">Last Updated: October 24, 2024</p>
+        <p class="last-updated">Last Updated: May 21, 2026</p>
     </header>
 
     <div class="card">
-        <p>At <span class="highlight">VizoScan</span>, we believe your private documents should stay private. Our "Golden Rule" is simple: <span class="highlight">Your document data never leaves your device.</span></p>
+        <p>At <span class="highlight">VizoScan AI</span>, we believe your private documents should stay private. Our "Golden Rule" is absolute: <span class="highlight">Your document data never leaves your device.</span> We run a fully decentralized, offline-first application ecosystem.</p>
     </div>
 
-    <h2>1. 100% On-Device Processing</h2>
-    <p>VizoScan uses Google ML Kit and high-performance local engines to process your scans and documents. All OCR (Text Recognition) and PDF generation happen <span class="highlight">offline</span> on your device hardware. We do not use cloud servers to process, view, or store your documents.</p>
+    <h2>1. 100% On-Device Processing & Editing</h2>
+    <p>VizoScan AI uses advanced machine learning kits and local text modifying engines to process your data. All text recognition (OCR), image perspective cropping, document parsing, and file modifications happen <span class="highlight">entirely offline</span> on your local hardware. We do not maintain or communicate with cloud servers to process, edit, or store your documents.</p>
 
-    <h2>2. Universal File Handling</h2>
-    <p>VizoScan is designed to manage <span class="highlight">PDF, Word, Excel, and PPT</span> files. When you view these files, the app uses secure local intents. We do not index the content of your files for any purpose other than displaying them to you within the app.</p>
-
-    <h2>3. Modern Permissions & Security</h2>
+    <h2>2. Local Workspace & Recycle Bin Architecture</h2>
+    <p>To help you manage files safely, the app includes a local file system layer:</p>
     <ul>
-        <li><strong>Camera:</strong> Used only when you trigger a "Scan". Images are processed in memory and never uploaded.</li>
-        <li><strong>System Photo Picker:</strong> We use the secure Android Photo Picker. This ensures we only have access to the specific images you explicitly select.</li>
-        <li><strong>Storage:</strong> We save files to the <code>Documents/VizoScan</code> folder. This follows Scoped Storage rules to keep your data organized and secure.</li>
+        <li><strong>Text Modification Engine:</strong> Modifying <code>.txt</code> elements is handled directly inside the app's secure runtime memory buffers and written straight back to your local file.</li>
+        <li><strong>Recycle Bin Workspace:</strong> When you delete an asset, it is safely moved to a hidden, isolated <code>.trash</code> directory within your device's app sandbox storage. It remains there until you manually restore it or select a permanent wipe.</li>
+    </ul>
+
+    <h2>3. Modern Permissions & Security Features</h2>
+    <ul>
+        <li><strong>Camera Framework:</strong> Used only when you initialize an active image capture loop or a document scan. Frames are held momentarily in device cache to handle perspective cropping and are never distributed outside the app.</li>
+        <li><strong>System Photo Picker:</strong> We leverage the secure, native Android Photo Picker. This guarantees that our system can only see the specific images you explicitly tap and select.</li>
+        <li><strong>Scoped App Storage:</strong> Documents are generated and kept securely inside isolated application sandboxed storage slots. This prevents other malicious apps installed on your device from tracking or accessing your data files.</li>
+        <li><strong>Home Screen Widgets:</strong> Our quick-shortcut app widgets run entirely on local intent receivers to trigger instant scans or hop to your local directory lists without collecting data.</li>
     </ul>
 
     <h2>4. Data Safety Compliance</h2>
-    <p>To support app improvements, we may use anonymized analytics (Firebase/Google Analytics). This data includes app crashes and feature usage statistics but <span class="highlight">never includes your document names, content, or personal files.</span></p>
+    <p>To maintain app stability, we may track completely anonymized diagnostic analytics (such as Firebase Crashlytics). This technical data covers basic system crashes and app feature usage metrics, but <span class="highlight">it never includes, logs, or tracks your document text contents, file names, or personal media inputs.</span></p>
 
-    <h2>5. Contact</h2>
+    <h2>5. Contact & Support</h2>
     <div class="card" style="text-align: center;">
-        <p>Privacy Inquiries:</p>
+        <p>For any privacy inquiries or support questions, please contact us directly at:</p>
         <a href="mailto:rajesh.codecanvas@gmail.com"><strong>rajesh.codecanvas@gmail.com</strong></a>
     </div>
 
-    <footer>&copy; 2024 CodeCanvas. All rights reserved.</footer>
+    <footer>&copy; 2026 CodeCanvas. All rights reserved.</footer>
 </div>
 </body>
 </html>
