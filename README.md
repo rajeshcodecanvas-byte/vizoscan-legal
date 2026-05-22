@@ -13,6 +13,8 @@ This repository serves as the official, public compliance workspace for **VizoSc
 
 </div>
 
+---
+
 ## 🌐 Live Legal Frameworks
 
 Our legal documentation is actively deployed and accessible via the secure links below. These URLs are compliant with the **Google Play Console Data Safety** policies.
