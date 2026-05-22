@@ -46,41 +46,40 @@
     <header>
         <h1>VizoScan AI</h1>
         <p class="brand">PREMIUM DOCUMENT SUITE</p>
-        <p class="last-updated">Last Updated: May 21, 2026</p>
+        <p class="last-updated">Last Updated: May 23, 2026</p>
     </header>
 
     <div class="card">
-        <p>At <span class="highlight">VizoScan AI</span>, we believe your private documents should stay private. Our "Golden Rule" is absolute: <span class="highlight">Your document data never leaves your device.</span> We run a fully decentralized, offline-first application ecosystem.</p>
+        <p>At <span class="highlight">VizoScan AI</span>, our "Golden Rule" is absolute: <span class="highlight">Your document data never leaves your device.</span> We run a fully decentralized, offline-first application ecosystem designed to protect your professional and personal information.</p>
     </div>
 
-    <h2>1. 100% On-Device Processing & Editing</h2>
-    <p>VizoScan AI uses advanced machine learning kits and local text modifying engines to process your data. All text recognition (OCR), image perspective cropping, document parsing, and file modifications happen <span class="highlight">entirely offline</span> on your local hardware. We do not maintain or communicate with cloud servers to process, edit, or store your documents.</p>
+    <h2>1. 100% On-Device Data Processing</h2>
+    <p>All core functions—including OCR (Optical Character Recognition), PDF generation, Word conversion, and Image Deskewing—are performed locally on your device hardware. VizoScan AI does not use cloud-based processing. Your documents are never uploaded, transmitted, or stored on external servers.</p>
 
-    <h2>2. Local Workspace & Recycle Bin Architecture</h2>
-    <p>To help you manage files safely, the app includes a local file system layer:</p>
+    <h2>2. Internal File Management Disclosure</h2>
+    <p>To provide a professional workspace experience, VizoScan AI requires specific permissions to manage your documents:</p>
     <ul>
-        <li><strong>Text Modification Engine:</strong> Modifying <code>.txt</code> elements is handled directly inside the app's secure runtime memory buffers and written straight back to your local file.</li>
-        <li><strong>Recycle Bin Workspace:</strong> When you delete an asset, it is safely moved to a hidden, isolated <code>.trash</code> directory within your device's app sandbox storage. It remains there until you manually restore it or select a permanent wipe.</li>
+        <li><strong>File Management:</strong> We use the <code>READ_EXTERNAL_STORAGE</code> permission (and MediaStore APIs) exclusively to provide the app’s <strong>Internal File Explorer</strong> feature. This allows the app to index and display your existing PDF, Word, and Text files locally so you can open, convert, or delete them within our workspace.</li>
+        <li><strong>Scoped Sandbox:</strong> All files created by the app are stored in an isolated, secure application sandbox to prevent unauthorized access by other third-party apps.</li>
     </ul>
 
-    <h2>3. Modern Permissions & Security Features</h2>
+    <h2>3. Hardware & Security Frameworks</h2>
     <ul>
-        <li><strong>Camera Framework:</strong> Used only when you initialize an active image capture loop or a document scan. Frames are held momentarily in device cache to handle perspective cropping and are never distributed outside the app.</li>
-        <li><strong>System Photo Picker:</strong> We leverage the secure, native Android Photo Picker. This guarantees that our system can only see the specific images you explicitly tap and select.</li>
-        <li><strong>Scoped App Storage:</strong> Documents are generated and kept securely inside isolated application sandboxed storage slots. This prevents other malicious apps installed on your device from tracking or accessing your data files.</li>
-        <li><strong>Home Screen Widgets:</strong> Our quick-shortcut app widgets run entirely on local intent receivers to trigger instant scans or hop to your local directory lists without collecting data.</li>
+        <li><strong>Camera Scanning:</strong> The camera is used solely to capture document frames. We use the <strong>Google ML Kit</strong> (via Google Play Services) for edge detection. All image analysis occurs in your device’s volatile memory and is never shared.</li>
+        <li><strong>System Photo Picker:</strong> When importing images, we utilize the native Android Photo Picker. VizoScan AI only accesses the specific media files you explicitly select.</li>
+        <li><strong>Recycle Bin:</strong> Deleted assets are moved to a local <code>.trash</code> folder within the app's internal storage. This data is not backed up to any cloud service and remains under your total control.</li>
     </ul>
 
-    <h2>4. Data Safety Compliance</h2>
-    <p>To maintain app stability, we may track completely anonymized diagnostic analytics (such as Firebase Crashlytics). This technical data covers basic system crashes and app feature usage metrics, but <span class="highlight">it never includes, logs, or tracks your document text contents, file names, or personal media inputs.</span></p>
+    <h2>4. Technical Transparency & Data Safety</h2>
+    <p>As an offline-first utility, VizoScan AI does not use third-party tracking or behavioral analytics. We may receive anonymized technical crash reports through the Google Play Console to ensure the app stays "ANR-Proof" and fast. These reports contain hardware specs (e.g., "Pixel 8") and stack traces, but <span class="highlight">never include your document content, filenames, or personal inputs.</span></p>
 
-    <h2>5. Contact & Support</h2>
+    <h2>5. Contact & Professional Support</h2>
     <div class="card" style="text-align: center;">
-        <p>For any privacy inquiries or support questions, please contact us directly at:</p>
+        <p>If you have any questions regarding our security architecture or on-device processing, please reach out to us:</p>
         <a href="mailto:rajesh.codecanvas@gmail.com"><strong>rajesh.codecanvas@gmail.com</strong></a>
     </div>
 
-    <footer>&copy; 2026 CodeCanvas. All rights reserved.</footer>
+    <footer>&copy; 2026 CodeCanvas Studio. All rights reserved.</footer>
 </div>
 </body>
 </html>
