@@ -3,41 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy | Vizo AI</title>
+    <title>Privacy Policy | VizoScan AI</title>
     <style>
-        :root { --midnight: #0B0E14; --surface: #1E1E1E; --gold: #FFC107; --text: #FFFFFF; --text-dim: #B0B0B0; }
-        body { font-family: 'Inter', sans-serif; background-color: var(--midnight); color: var(--text); margin: 0; padding: 0; line-height: 1.7; }
+        :root {
+            --midnight: #0B0E14;
+            --charcoal: #121212;
+            --surface: #1E1E1E;
+            --gold: #FFC107;
+            --text-primary: #FFFFFF;
+            --text-secondary: #B0B0B0;
+        }
+        body { font-family: 'Inter', system-ui, -apple-system, sans-serif; background-color: var(--midnight); color: var(--text-primary); margin: 0; line-height: 1.7; }
         .container { max-width: 800px; margin: 0 auto; padding: 60px 20px; }
-        h1 { color: var(--gold); font-size: 2.5rem; text-align: center; }
-        h2 { color: var(--gold); margin-top: 40px; }
-        .card { background: var(--surface); padding: 30px; border-radius: 20px; border-left: 6px solid var(--gold); }
-        .mail-link { color: var(--gold); font-weight: bold; text-decoration: none; }
+        h1 { color: var(--gold); font-size: 2.2rem; margin-bottom: 5px; }
+        h2 { color: var(--gold); margin-top: 40px; font-size: 1.3rem; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 8px; }
+        .brand-tag { font-weight: 800; letter-spacing: 3px; font-size: 0.75rem; color: var(--gold); opacity: 0.8; text-transform: uppercase; }
+        .card { background: var(--surface); padding: 30px; border-radius: 16px; border: 1px solid rgba(255,255,255,0.05); margin: 30px 0; }
+        ul { padding-left: 20px; color: var(--text-secondary); }
         li { margin-bottom: 10px; }
+        p { color: var(--text-secondary); }
+        strong { color: var(--text-primary); }
+        a.email-link { color: var(--gold); text-decoration: none; border-bottom: 1px dashed var(--gold); }
+        a.email-link:hover { opacity: 0.8; }
+        .back-nav { display: inline-block; margin-bottom: 30px; color: var(--gold); text-decoration: none; font-weight: bold; }
+        .back-nav:hover { text-decoration: underline; }
+        footer { text-align: center; padding: 40px 0; color: var(--text-secondary); font-size: 0.85rem; border-top: 1px solid rgba(255,255,255,0.03); margin-top: 60px; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Privacy Policy</h1>
-        <div class="card">
-            <p><b>The Zero-Cloud Mandate:</b> Vizo AI never uploads, transmits, or ingests your document data into any cloud infrastructure. Your files stay on your device.</p>
+        <a href="index.html" class="back-nav">← Back to Compliance Hub</a>
+        
+        <header style="margin-bottom: 40px;">
+            <p class="brand-tag">The CodeCanvas Studio • Privacy by Design</p>
+            <h1>Privacy Policy</h1>
+            <p style="color: var(--text-secondary); font-size: 0.9rem;">Last Updated: August 08, 2026</p>
+        </header>
+
+        <div class="card" style="border-left: 4px solid var(--gold);">
+            <p style="margin: 0; color: var(--text-primary);"><strong>The Zero-Cloud Mandate:</strong> VizoScan AI is built by The CodeCanvas Studio on the absolute principle that your documents belong entirely to you. We never upload, transmit, or ingest your private document data into any external cloud architecture.</p>
         </div>
 
-        <h2>1. Zero Data Collection</h2>
-        <p>We do not require accounts or identities. Your usage is 100% anonymous and decentralized.</p>
+        <h2>1. Data Collection & Anonymity</h2>
+        <p>VizoScan AI does not require account creation, user registration, identity verification, or profile building. We do not collect names, email addresses, phone numbers, or tracking metadata. Your usage of the app remains completely anonymous and decentralized on your device.</p>
 
-        <h2>2. On-Device AI (The Brain)</h2>
+        <h2>2. On-Device AI Processing (The Brain)</h2>
+        <p>When you use the intelligent document features:</p>
         <ul>
-            <li><b>OCR Engine:</b> Processes text locally via ML Kit.</li>
-            <li><b>Summarization:</b> Happens within device RAM; no content is logged.</li>
+            <li><strong>OCR Engine:</strong> Uses local frameworks (like Google ML Kit) to extract text directly on your hardware. No raw image data or scanned documents are ever transmitted to external servers.</li>
+            <li><strong>Summarization:</strong> Analysis logic executes locally inside device memory. Content is never permanently logged or saved externally by The CodeCanvas Studio.</li>
         </ul>
 
-        <h2>3. Document Hub (MediaStore)</h2>
-        <p>The app uses the Android MediaStore API to provide a local view of your files. This index is strictly private to your device.</p>
+        <h2>3. Document Hub & MediaStore API</h2>
+        <p>VizoScan AI utilizes Android’s native <code>MediaStore</code> API to provide an organized, responsive workspace for your local PDFs and document files. This scanning process is strictly read-only and local; directory paths are mapped locally to build your interface without mirroring files externally.</p>
 
-        <div class="card" style="margin-top:50px; text-align: center; border-left:none; border:1px solid rgba(255,255,255,0.1);">
-            <p>Privacy Support: <a href="mailto:rajesh.codecanvas@gmail.com" class="mail-link">rajesh.codecanvas@gmail.com</a></p>
+        <h2>4. App Permissions Overview</h2>
+        <ul>
+            <li><strong>Camera:</strong> Utilized strictly for real-time document capture frames within the scanning workflow.</li>
+            <li><strong>Storage / Media:</strong> Utilized exclusively to read and display your local document directory library.</li>
+            <li><strong>Haptics:</strong> Utilized locally to deliver tactile interface feedback.</li>
+        </ul>
+
+        <h2>5. Your Absolute Rights</h2>
+        <p>Because your files are stored locally and never synced to our servers, you maintain 100% ownership and control. Deleting an asset from the app or clearing local app data removes all traces immediately and permanently.</p>
+
+        <div style="margin-top: 50px; background: var(--surface); padding: 25px; border-radius: 12px; text-align: center;">
+            <p style="margin: 0;">Privacy Compliance Desk: <a href="mailto:rajesh.codecanvas@gmail.com" class="email-link">rajesh.codecanvas@gmail.com</a></p>
         </div>
-        <footer style="text-align: center; padding: 40px; color: var(--text-dim);">© 2026 CodeCanvas Studio</footer>
+
+        <footer>
+            <p>© 2026 The CodeCanvas Studio. All rights reserved.</p>
+        </footer>
     </div>
 </body>
 </html>
