@@ -1,34 +1,43 @@
-<div class="container">
-    <header style="text-align: center; margin-bottom: 50px;">
-        <h1 style="color: var(--gold);">Privacy Policy</h1>
-        <p class="brand-tag">Privacy by Design • Intelligence by Local AI</p>
-        <p style="color: var(--text-secondary);">Last Updated: August 08, 2026</p>
-    </header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Vizo AI</title>
+    <style>
+        :root { --midnight: #0B0E14; --surface: #1E1E1E; --gold: #FFC107; --text: #FFFFFF; --text-dim: #B0B0B0; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--midnight); color: var(--text); margin: 0; padding: 0; line-height: 1.7; }
+        .container { max-width: 800px; margin: 0 auto; padding: 60px 20px; }
+        h1 { color: var(--gold); font-size: 2.5rem; text-align: center; }
+        h2 { color: var(--gold); margin-top: 40px; }
+        .card { background: var(--surface); padding: 30px; border-radius: 20px; border-left: 6px solid var(--gold); }
+        .mail-link { color: var(--gold); font-weight: bold; text-decoration: none; }
+        li { margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <div class="card">
+            <p><b>The Zero-Cloud Mandate:</b> Vizo AI never uploads, transmits, or ingests your document data into any cloud infrastructure. Your files stay on your device.</p>
+        </div>
 
-    <div class="card" style="border-left: 5px solid var(--gold);">
-        <p><strong>The Zero-Cloud Mandate:</strong> VizoScan AI is built on the principle that your documents are your business. We never upload, transmit, or ingest your document data into any cloud infrastructure.</p>
+        <h2>1. Zero Data Collection</h2>
+        <p>We do not require accounts or identities. Your usage is 100% anonymous and decentralized.</p>
+
+        <h2>2. On-Device AI (The Brain)</h2>
+        <ul>
+            <li><b>OCR Engine:</b> Processes text locally via ML Kit.</li>
+            <li><b>Summarization:</b> Happens within device RAM; no content is logged.</li>
+        </ul>
+
+        <h2>3. Document Hub (MediaStore)</h2>
+        <p>The app uses the Android MediaStore API to provide a local view of your files. This index is strictly private to your device.</p>
+
+        <div class="card" style="margin-top:50px; text-align: center; border-left:none; border:1px solid rgba(255,255,255,0.1);">
+            <p>Privacy Support: <a href="mailto:rajesh.codecanvas@gmail.com" class="mail-link">rajesh.codecanvas@gmail.com</a></p>
+        </div>
+        <footer style="text-align: center; padding: 40px; color: var(--text-dim);">© 2026 CodeCanvas Studio</footer>
     </div>
-
-    <h2>1. Data Collection: None.</h2>
-    <p>VizoScan AI does not require account creation, identity verification, or profile building. We do not collect names, email addresses, or phone numbers. Your usage of the app is completely anonymous and decentralized.</p>
-
-    <h2>2. On-Device AI Processing (The Brain)</h2>
-    <p>When you use the "AI Brain" features (OCR or Summarization):</p>
-    <ul>
-        <li><strong>OCR Engine:</strong> Uses Google ML Kit to process text locally. No image data is sent to Google servers.</li>
-        <li><strong>Summarization:</strong> Text analysis happens within the device RAM. If an AI summary is requested, it is processed via on-device models or high-privacy temporary API endpoints (where applicable), but content is never logged or stored by us.</li>
-    </ul>
-
-    <h2>3. Document Hub (MediaStore API)</h2>
-    <p>VizoScan AI uses the Android <code>MediaStore</code> API to provide an automatic view of your PDFs and documents. This process is <strong>strictly local</strong>. We index the filenames and paths to create your colorful Workspace, but we do not mirror these files to any external server.</p>
-
-    <h2>4. App Permissions</h2>
-    <ul>
-        <li><strong>Camera:</strong> Used exclusively for real-time document frame capture.</li>
-        <li><strong>Storage/Media:</strong> Used to display and manage your local document library.</li>
-        <li><strong>Haptics:</strong> Used to provide tactile feedback during tool usage.</li>
-    </ul>
-
-    <h2>5. Your Rights</h2>
-    <p>Because we do not store your data on our servers, you have 100% control over your "Right to be Forgotten." Deleting a file from the app or clearing the app cache removes all data instantly and permanently.</p>
-</div>
+</body>
+</html>
