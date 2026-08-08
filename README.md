@@ -1,47 +1,47 @@
 <div align="center">
 
-# ⚖️ Legal & Compliance Workspace
-### **VizoScan AI — Premium Document Suite**
+# ⚖️ VizoScan AI — Legal & Compliance Infrastructure
+### **The Gold Standard in Privacy-First Document Productivity**
 
-[![Platform](https://img.shields.io/badge/Platform-Android-3DDC84?style=flat-square&logo=android&logoColor=white)](https://developer.android.com)
-[![Architecture](https://img.shields.io/badge/Architecture-Offline--First-FFD700?style=flat-square)](#)
-[![Compliance](https://img.shields.io/badge/Data%20Safety-100%25%20On--Device-007ACC?style=flat-square)](#)
+[![Platform](https://img.shields.io/badge/Platform-Android_14+-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://developer.android.com)
+[![Architecture](https://img.shields.io/badge/Architecture-Offline--First-FFD700?style=for-the-badge)](#)
+[![Compliance](https://img.shields.io/badge/Data%20Safety-100%25%20On--Device-007ACC?style=for-the-badge)](#)
 
 ---
 
-This repository serves as the official, public compliance workspace for **VizoScan AI**, engineered by **CodeCanvas Studio**. It hosts our legally binding frameworks, user protection guarantees, and data architecture disclosures.
+**VizoScan AI** is engineered by **CodeCanvas Studio** with an absolute mandate: **Zero-Cloud Intelligence.** 
+This workspace hosts the legally binding frameworks and data architecture disclosures required for professional, enterprise, and personal deployment.
 
 </div>
 
 ---
 
-## 🌐 Live Legal Frameworks
+## 🌐 Public Legal Access
+These live documents serve as our official "Privacy Handshake" with our users and are fully compliant with the **Google Play Console Data Safety** mandates.
 
-Our legal documentation is actively deployed and accessible via the secure links below. These URLs are compliant with the **Google Play Console Data Safety** policies.
-
-| Document Title | Live Public Link | Last Updated |
+| Resource | Scope | Status |
 | :--- | :--- | :--- |
-| 🛡️ **Privacy Policy** | [View Document](https://rajeshcodecanvas-byte.github.io/vizoscan-legal/vizoscan-privacy.html) | May 23, 2026 |
-| ⚖️ **Terms of Use** | [View Document](https://rajeshcodecanvas-byte.github.io/vizoscan-legal/terms.html) | May 23, 2026 |
+| 🛡️ **[Privacy Policy](https://rajeshcodecanvas-byte.github.io/vizoscan-legal/vizoscan-privacy.html)** | Data Handling, OCR Privacy, & MediaStore Handlers | **Active / Live** |
+| ⚖️ **[Terms of Service](https://rajeshcodecanvas-byte.github.io/vizoscan-legal/terms.html)** | Licensing, AI Accuracy Disclaimers, & User Liability | **Active / Live** |
 
 ---
 
-## 🔒 Architecture & Core Data Guarantees
+## 🔒 The "Vizo" Data Guarantee
+Our "Luxury Tech" architecture is built on three unbreakable technical pillars:
 
-VizoScan AI operates under an absolute **Zero-Cloud, Local-First** mandate. Our operational mechanics strictly guarantee:
-
-* **Complete Decentralization:** No background file telemetry, remote log ingestion, or identity harvesting. 
-* **Scoped Sandboxing:** Document operational caches are strictly isolated inside volatile application memory or explicit system sandboxes (`MediaStore` APIs).
-* **Cryptographic Trashing:** The system's local "Recycle Bin" logic executes complete, hardware-level asset unlinking upon permanent purge requests.
+1. **Automatic Document Hub (MediaStore):** The system utilizes Android’s native `MediaStore` API to index local PDFs and documents. This is a *read-only* mapping process; no data is ingested into external databases.
+2. **On-Device AI Brain (ML Kit & Gemini):** Text Recognition (OCR) and Summarization logic execute strictly within the device's volatile memory. Extracted text is never persistent beyond the active user session.
+3. **Hardware-Level Purging:** The local "Recycle Bin" ensures that when an asset is deleted, the hardware unlinking process is absolute, leaving zero forensic trace in the app's scoped sandbox.
 
 ---
 
 <div align="center">
 
-### **Corporate & Legal Inquiries**
-For enterprise scaling or regulatory transparency audits, contact our desk:
+### **Corporate & Legal Desk**
+For regulatory audits or enterprise licensing inquiries, contact our compliance team:
 📩 **rajesh.codecanvas@gmail.com**
 
 © 2026 **CodeCanvas Studio**. All rights reserved.
+*Built for Professionals. Private by Design.*
 
 </div>
