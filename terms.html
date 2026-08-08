@@ -3,38 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms of Use | Vizo AI</title>
+    <title>Terms of Use | VizoScan AI</title>
     <style>
-        :root { --midnight: #0B0E14; --surface: #1E1E1E; --gold: #FFC107; --text: #FFFFFF; --text-dim: #B0B0B0; }
-        body { font-family: 'Inter', sans-serif; background-color: var(--midnight); color: var(--text); margin: 0; padding: 0; line-height: 1.7; }
+        :root {
+            --midnight: #0B0E14;
+            --charcoal: #121212;
+            --surface: #1E1E1E;
+            --gold: #FFC107;
+            --text-primary: #FFFFFF;
+            --text-secondary: #B0B0B0;
+        }
+        body { font-family: 'Inter', system-ui, -apple-system, sans-serif; background-color: var(--midnight); color: var(--text-primary); margin: 0; line-height: 1.7; }
         .container { max-width: 800px; margin: 0 auto; padding: 60px 20px; }
-        h1 { color: var(--gold); font-size: 2.5rem; text-align: center; }
-        h2 { color: var(--gold); border-left: 4px solid var(--gold); padding-left: 15px; margin-top: 40px; }
-        .card { background: var(--surface); padding: 30px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.05); }
-        .mail-link { color: var(--gold); font-weight: bold; text-decoration: none; border-bottom: 1px dashed var(--gold); }
-        footer { text-align: center; margin-top: 60px; color: var(--text-dim); font-size: 0.8rem; }
+        h1 { color: var(--gold); font-size: 2.2rem; margin-bottom: 5px; }
+        h2 { color: var(--gold); margin-top: 40px; font-size: 1.3rem; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 8px; }
+        .brand-tag { font-weight: 800; letter-spacing: 3px; font-size: 0.75rem; color: var(--gold); opacity: 0.8; text-transform: uppercase; }
+        .card { background: var(--surface); padding: 30px; border-radius: 16px; border: 1px solid rgba(255,255,255,0.05); margin: 30px 0; }
+        p { color: var(--text-secondary); }
+        strong { color: var(--text-primary); }
+        a.email-link { color: var(--gold); text-decoration: none; border-bottom: 1px dashed var(--gold); }
+        a.email-link:hover { opacity: 0.8; }
+        .back-nav { display: inline-block; margin-bottom: 30px; color: var(--gold); text-decoration: none; font-weight: bold; }
+        .back-nav:hover { text-decoration: underline; }
+        footer { text-align: center; padding: 40px 0; color: var(--text-secondary); font-size: 0.85rem; border-top: 1px solid rgba(255,255,255,0.03); margin-top: 60px; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Terms of Use</h1>
+        <a href="index.html" class="back-nav">← Back to Compliance Hub</a>
+        
+        <header style="margin-bottom: 40px;">
+            <p class="brand-tag">The CodeCanvas Studio • Professional Framework</p>
+            <h1>Terms of Use</h1>
+            <p style="color: var(--text-secondary); font-size: 0.9rem;">Effective Date: August 08, 2026</p>
+        </header>
+
         <div class="card">
-            <p>By initializing <b>Vizo AI</b>, you agree to these professional terms. This suite is a high-performance productivity asset provided for local document management.</p>
+            <p style="margin: 0;">By initializing and running <strong style="color: var(--gold);">VizoScan AI</strong>, you establish a legally binding user agreement with <strong style="color: var(--text-primary);">The CodeCanvas Studio</strong>. This application is a high-performance productivity asset provided for local document workflows.</p>
         </div>
 
-        <h2>1. The VizoLab toolkit</h2>
-        <p>CodeCanvas grants you a private license to use our proprietary scanning engines. Attempting to reverse-engineer the "AI Brain" logic is strictly prohibited.</p>
+        <h2>1. The Licensing Agreement</h2>
+        <p>The CodeCanvas Studio grants you a non-exclusive, non-transferable, private license to utilize our proprietary scanning and layout engines. You are strictly prohibited from attempting to decompile, reverse-engineer, modify, or extract core application logic for external commercial distribution.</p>
 
-        <h2>2. Data Responsibility</h2>
-        <p>Vizo AI is <b>Offline-First</b>. We do not host or back up your files. You are the sole custodian of your data. We are not liable for data loss due to device failure.</p>
+        <h2>2. Automatic Document Hub Responsibility</h2>
+        <p>The application indexes local assets on your hardware strictly to build your functional workspace interface. You acknowledge that The CodeCanvas Studio does not store, backup, or host these files externally. You remain the sole custodian of your files, and The CodeCanvas Studio is not liable for data loss caused by hardware failure or manual app uninstallation.</p>
 
-        <h2>3. AI Verification</h2>
-        <p>AI-generated summaries are for guidance. Manual verification is required for all legal or financial documents.</p>
+        <h2>3. AI Accuracy & Processing Disclaimer</h2>
+        <p>Our intelligence layers (OCR parsing and text summaries) are engineered to yield high-probability professional insights. Because scan environments and physical documents vary, <strong>users are required to manually verify all automated summaries, text outputs, and titles prior to utilizing them in official legal, medical, or financial matters.</strong></p>
 
-        <div class="card" style="margin-top:50px; text-align: center;">
-            <p>For legal inquiries: <a href="mailto:rajesh.codecanvas@gmail.com" class="mail-link">rajesh.codecanvas@gmail.com</a></p>
+        <h2>4. Termination of License</h2>
+        <p>Any malicious attempts to exploit application toolsets for unlawful data processing will result in the immediate and permanent revocation of your usage rights.</p>
+
+        <div style="margin-top: 50px; background: var(--surface); padding: 25px; border-radius: 12px; text-align: center;">
+            <p style="margin: 0;">Legal Desk Inquiries: <a href="mailto:rajesh.codecanvas@gmail.com" class="email-link">rajesh.codecanvas@gmail.com</a></p>
         </div>
-        <footer>© 2026 CodeCanvas Studio</footer>
+
+        <footer>
+            <p>© 2026 The CodeCanvas Studio. All rights reserved.</p>
+        </footer>
     </div>
 </body>
 </html>
