@@ -1,85 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Privacy Policy | VizoScan AI</title>
-    <style>
-        :root {
-            --midnight: #0B0E14;
-            --surface: #161B22;
-            --gold: #FFD700;
-            --text-main: #E0E0E0;
-            --text-dim: #A0A0A0;
-        }
-        * { box-sizing: border-box; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--midnight);
-            color: var(--text-main);
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-        }
-        .container { width: 100%; max-width: 800px; margin: 0 auto; padding: 20px; }
-        header { border-bottom: 1px solid var(--surface); padding: 20px 0; margin-bottom: 20px; text-align: center; }
-        h1 { color: var(--gold); margin: 0; font-size: 1.8rem; }
-        h2 { color: var(--gold); margin-top: 25px; font-size: 1.3rem; border-left: 3px solid var(--gold); padding-left: 12px; }
-        .brand { font-weight: bold; color: var(--gold); letter-spacing: 1px; font-size: 0.8rem; margin-top: 5px; }
-        .last-updated { font-size: 0.8rem; color: var(--text-dim); margin-top: 10px; }
-        .card {
-            background: var(--surface);
-            padding: 20px;
-            border-radius: 12px;
-            margin-bottom: 15px;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-        }
-        .highlight { color: var(--gold); font-weight: bold; }
-        footer { text-align: center; margin-top: 40px; padding: 20px 0; border-top: 1px solid var(--surface); color: var(--text-dim); font-size: 0.8rem; }
-        a { color: var(--gold); text-decoration: none; }
-        ul { padding-left: 20px; }
-        li { margin-bottom: 8px; }
-    </style>
-</head>
-<body>
 <div class="container">
-    <header>
-        <h1>VizoScan AI</h1>
-        <p class="brand">PREMIUM DOCUMENT SUITE</p>
-        <p class="last-updated">Last Updated: May 23, 2026</p>
+    <header style="text-align: center; margin-bottom: 50px;">
+        <h1 style="color: var(--gold);">Privacy Policy</h1>
+        <p class="brand-tag">Privacy by Design • Intelligence by Local AI</p>
+        <p style="color: var(--text-secondary);">Last Updated: August 08, 2026</p>
     </header>
 
-    <div class="card">
-        <p>At <span class="highlight">VizoScan AI</span>, our "Golden Rule" is absolute: <span class="highlight">Your document data never leaves your device.</span> We run a fully decentralized, offline-first application ecosystem designed to protect your professional and personal information.</p>
+    <div class="card" style="border-left: 5px solid var(--gold);">
+        <p><strong>The Zero-Cloud Mandate:</strong> VizoScan AI is built on the principle that your documents are your business. We never upload, transmit, or ingest your document data into any cloud infrastructure.</p>
     </div>
 
-    <h2>1. 100% On-Device Data Processing</h2>
-    <p>All core functions—including OCR (Optical Character Recognition), PDF generation, Word conversion, and Image Deskewing—are performed locally on your device hardware. VizoScan AI does not use cloud-based processing. Your documents are never uploaded, transmitted, or stored on external servers.</p>
+    <h2>1. Data Collection: None.</h2>
+    <p>VizoScan AI does not require account creation, identity verification, or profile building. We do not collect names, email addresses, or phone numbers. Your usage of the app is completely anonymous and decentralized.</p>
 
-    <h2>2. Internal File Management Disclosure</h2>
-    <p>To provide a professional workspace experience, VizoScan AI requires specific permissions to manage your documents:</p>
+    <h2>2. On-Device AI Processing (The Brain)</h2>
+    <p>When you use the "AI Brain" features (OCR or Summarization):</p>
     <ul>
-        <li><strong>File Management:</strong> We use the <code>READ_EXTERNAL_STORAGE</code> permission (and MediaStore APIs) exclusively to provide the app’s <strong>Internal File Explorer</strong> feature. This allows the app to index and display your existing PDF, Word, and Text files locally so you can open, convert, or delete them within our workspace.</li>
-        <li><strong>Scoped Sandbox:</strong> All files created by the app are stored in an isolated, secure application sandbox to prevent unauthorized access by other third-party apps.</li>
+        <li><strong>OCR Engine:</strong> Uses Google ML Kit to process text locally. No image data is sent to Google servers.</li>
+        <li><strong>Summarization:</strong> Text analysis happens within the device RAM. If an AI summary is requested, it is processed via on-device models or high-privacy temporary API endpoints (where applicable), but content is never logged or stored by us.</li>
     </ul>
 
-    <h2>3. Hardware & Security Frameworks</h2>
+    <h2>3. Document Hub (MediaStore API)</h2>
+    <p>VizoScan AI uses the Android <code>MediaStore</code> API to provide an automatic view of your PDFs and documents. This process is <strong>strictly local</strong>. We index the filenames and paths to create your colorful Workspace, but we do not mirror these files to any external server.</p>
+
+    <h2>4. App Permissions</h2>
     <ul>
-        <li><strong>Camera Scanning:</strong> The camera is used solely to capture document frames. We use the <strong>Google ML Kit</strong> (via Google Play Services) for edge detection. All image analysis occurs in your device’s volatile memory and is never shared.</li>
-        <li><strong>System Photo Picker:</strong> When importing images, we utilize the native Android Photo Picker. VizoScan AI only accesses the specific media files you explicitly select.</li>
-        <li><strong>Recycle Bin:</strong> Deleted assets are moved to a local <code>.trash</code> folder within the app's internal storage. This data is not backed up to any cloud service and remains under your total control.</li>
+        <li><strong>Camera:</strong> Used exclusively for real-time document frame capture.</li>
+        <li><strong>Storage/Media:</strong> Used to display and manage your local document library.</li>
+        <li><strong>Haptics:</strong> Used to provide tactile feedback during tool usage.</li>
     </ul>
 
-    <h2>4. Technical Transparency & Data Safety</h2>
-    <p>As an offline-first utility, VizoScan AI does not use third-party tracking or behavioral analytics. We may receive anonymized technical crash reports through the Google Play Console to ensure the app stays "ANR-Proof" and fast. These reports contain hardware specs (e.g., "Pixel 8") and stack traces, but <span class="highlight">never include your document content, filenames, or personal inputs.</span></p>
-
-    <h2>5. Contact & Professional Support</h2>
-    <div class="card" style="text-align: center;">
-        <p>If you have any questions regarding our security architecture or on-device processing, please reach out to us:</p>
-        <a href="mailto:rajesh.codecanvas@gmail.com"><strong>rajesh.codecanvas@gmail.com</strong></a>
-    </div>
-
-    <footer>&copy; 2026 CodeCanvas Studio. All rights reserved.</footer>
+    <h2>5. Your Rights</h2>
+    <p>Because we do not store your data on our servers, you have 100% control over your "Right to be Forgotten." Deleting a file from the app or clearing the app cache removes all data instantly and permanently.</p>
 </div>
-</body>
-</html>
